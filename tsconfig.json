@@ -3,8 +3,8 @@
     "outDir": "./dist/",
     // запрещает неявное any
     "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
+    "module": "ES6",
+    "target": "ES5",
     "jsx": "react",
     // для обработки js
     "allowJs": true,
@@ -12,6 +12,12 @@
     // для замены require на import
     "esModuleInterop": true,
     // для обычных импортов без 'as *'
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
   }
 }
